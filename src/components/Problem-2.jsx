@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import SearchField from "./SearchField";
 
 const Problem2 = () => {
   const [allContact, setAllContact] = useState(null);
@@ -99,6 +100,7 @@ const req = await fetch("https://contact.mediusware.com/api/country-contacts/Uni
               </button>
             </div>
             <div className="modal-body">
+            <SearchField/>
               <table className="table table-striped-columns">
                 <thead>
                   <tr>
@@ -171,7 +173,7 @@ const req = await fetch("https://contact.mediusware.com/api/country-contacts/Uni
               </button>
             </div>
             <div className="modal-body">
-              
+            <SearchField/>
             <table className="table table-striped-columns">
                 <thead>
                   <tr>
